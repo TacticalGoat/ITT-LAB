@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Feedback</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header>
+			<div class="wrapper">
+				<h1>Feedback<span class="color">.</span></h1>
+			</div>
+		</header>
+		<div class="my-form">
+		<form name="inputform" action="" method="POST">
+			<fieldset>
+				<legend><span class="number">1</span>Your Info</legend>
+				<input type="text" name="fname" placeholder="First Name"/><br>
+				<input type="text" name="lname" placeholder="Last Name"/><br>
+				<input type="text" name="email" placeholder="Email"/><br>
+				<input type="text" name="address" placeholder="Address"/><br>
+				<br>
+				<legend><span class="number">2</span>What did you like about us?</legend>
+				<ul>
+					<li><input type="checkbox" name="stubox"/><label for="stubox">Students</label></li>
+					<li><input type="checkbox" name="locbox"/><label for="locbox">Location</label></li>
+					<li><input type="checkbox" name="cambox"/><label for="cambox">Campus</label></li>
+					<li><input type="checkbox" name="dormbox"/><label for="dormbox">Dorms</label></li>
+				</ul>
+				<br>
+				<legend><span class="number">3</span>How did you hear about us?</legend>
+				<ul>
+					<li><input type="radio" name="x" value="Internet">Internet</li>
+					<li><input type="radio" name="x" value="Television">Television</li>
+					<li><input type="radio" name="x" value="Friends">Friends</li>
+					<li><input type="radio" name="x" value="Other">Other</li>
+				</ul>
+				<br>
+				<legend><span class="number">4</span>Comments</legend>
+				<textarea></textarea>
+			<input type="submit" name="submit" value="Submit"/>
+			</fieldset>
+		</form>
+		</div>
+	</body>
+</html>

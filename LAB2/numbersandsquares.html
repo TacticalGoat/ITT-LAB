@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Squares</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function addTable() {
+				var body = document.getElementsByTagName("body")[0];
+				var tbl = document.createElement('table');
+				tbl.style.width = '100px';
+				tbl.style.border = '5px solid black';
+				var tbdy = document.createElement('tbody');
+				for(var i = 1; i <= 10; i++)
+				{
+				 	var tr = tbl.insertRow();
+				 	var td = tr.insertCell();
+				 	var x  = Math.pow(i,2);
+				 	var y = Math.pow(i,3);
+				 	td.appendChild(document.createTextNode(i));
+				 	var td = tr.insertCell();
+				 	td.appendChild(document.createTextNode(x));
+				 	var td = tr.insertCell();
+				 	td.appendChild(document.createTextNode(y));
+				}
+				body.appendChild(tbl);
+			};
+			window.onload = addTable();
+		</script>
+	</body>
+</html>
